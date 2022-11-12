@@ -1,11 +1,38 @@
 .body{
     display: grid;
-    grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
-    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-columns: 25vw 25vw 25vw 25vw ;
+    grid-template-rows: 10vh 20vh 20vh 20vh 20vh 10vh;
     grid-template-areas: 
-    "nav nav nav nav nav"
-    "pantalla pantalla pantalla pantalla pantalla"
-    "footer footer footer footer footer";
+    "nav nav nav nav"
+    "habilidad1 habilidad1   habilidad2 habilidad2"
+    "habilidad3 habilidad3   habilidad4 habilidad4"
+    "habilidad5 habilidad5   habilidad6 habilidad6"
+    "habilidad7 habilidad7    habilidad8 habilidad8"
+    "footer footer footer footer";
+}
+.habilidad1{
+    grid-area: habilidad1;
+}
+.habilidad2{
+    grid-area: habilidad2;
+}
+.habilidad3{
+    grid-area: habilidad3;
+}
+.habilidad4{
+    grid-area: habilidad4;
+}
+.habilidad5{
+    grid-area: habilidad5;
+}
+.habilidad6{
+    grid-area: habilidad6;
+}
+.habilidad7{
+    grid-area: habilidad7;
+}
+.habilidad8{
+    grid-area: habilidad8;
 }
 
 
@@ -63,31 +90,29 @@ align-items: center;
     width: 10vh;
     height: 8vh;}
 
-.formulario .apellidos , .formulario .nombre , .formulario .tag-Git, .formulario .radio-btn, .formulario .telefono, .formulario .descripcion{
-    display: flex;
-    justify-content:flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 10px;
+.barra{
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    border-color: #3b5998;
+    width: 75%;
+    height:10%;
+    background-color: #fafcff;
+
 }
-.label{
-    width:25vw;}
-.radio-btn .label{
-    width: auto;
+.habilidad1 , .habilidad2 , .habilidad3, .habilidad4, .habilidad5, .habilidad6, .habilidad7, .habilidad8{
+        margin-top: 5%;
+        margin-left: 5%;
+        justify-content:center;
+        align-items: center;
+        
+        
 }
-.formulario.radio-btn{
-    justify-content: space-between;
-}
-.mensaje{
+.letras{
+    color:  #3b5998 ;
     font-size: 24px;
-    color:#3b5998;
-    font-style: italic;
+    font-style:inherit;
 }
-
-
-
-
-
 
 
 @media (min-width:768px) {
@@ -109,37 +134,4 @@ align-items: center;
     
     }
     
-}
-.herramientas{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-
-}
-
-
-.habilidad{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    align-items: center;
-    border-style: solid;
-    border-radius: 1px;
-    border-width: 2px;
-   
-   
-
-
-    
-}
-.barra{
-    border-style: solid;
-    border-radius: 5px;
-    border-width: 2px;
-    border-color: #3b5998;
-    width: 25px;
-    height:3px;
-    background-color: #fafcff;
-
 }

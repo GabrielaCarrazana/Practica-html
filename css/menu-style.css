@@ -1,6 +1,5 @@
 .body{
     display: grid;
-    display: grid;
     grid-template-columns: 100vw;
     grid-template-rows: 15vh 10vh 10vh 10vh 55vh;
     border-color: white;
