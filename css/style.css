@@ -1,0 +1,79 @@
+.body{
+    display: grid;
+    grid-template-columns: 20vw 20vw 20vw 20vw 20vw;
+    grid-template-rows: 10vh 80vh 10vh;
+    grid-template-areas: 
+    "nav nav nav nav nav"
+    "pantalla pantalla pantalla pantalla pantalla"
+    "footer footer footer footer footer";
+}
+.Aplicacion{
+display: flex;
+justify-content: start;
+align-items: center;
+}
+.nav{
+    font-size: 5vh;
+    color:white;
+    font-style :inherit;
+    grid-area: nav;
+    background-color: #3b5998 ;
+    }
+.expand{
+    display: flex;
+    justify-content: space-between; 
+    padding-left: 0.5vh;
+    padding-right: 0.5vh;
+    align-items:center; 
+}
+.nav  .link{
+    font-size: 3vh;
+    font-style:inherit;
+    color: white;
+    text-decoration: none;
+    display: none;
+}
+
+
+.footer, .nav{
+    display: flex;
+    justify-content: space-between; 
+    padding-left: 0.5vh;
+    padding-right: 0.5vh;
+    align-items:center; 
+    background-color: #3b5998 ; 
+}
+
+.footer{     
+    grid-area: footer;
+    }
+
+.pantalla{
+    grid-area: pantalla;
+    background-color: rgb(224, 222, 222);
+}
+.footer .logo, .footer .link,.nav .logo{    
+   height: 5vh;
+}
+
+.nav .icono{
+    width: 10vh;
+    height: 8vh;
+}
+
+@media (min-width:768px) {
+    .nav .menu{
+        display:none;
+    }
+    .nav .expand .link{
+        padding-left: 1vw;
+        padding-right: 1vw;
+        display:flex;
+    }
+    .nav .expand .link:hover{
+        color: beige;
+        opacity: 30%;
+    }
+    
+}
+    
