@@ -60,6 +60,71 @@ align-items: center;
     width: 10vh;
     height: 8vh;
 }
+.pantalla{
+    display: grid;
+    grid-template-columns: 100% ;
+    grid-template-rows:10vh 10vh 10vh 10vh 10vh 10vh 10vh 10vh;
+    grid-template-areas: 
+    "nombre nombre"
+    "apellidos"
+    "telefono "
+    "radiobutton radiobutton"
+    "tag tag"
+    "descripcion "
+    "descripcion "
+    "descripcion "
+    "descripcion "
+    "boton boton";
+}
+.pantalla .formulario .nombre{
+    grid-area: nombre;
+}
+.pantalla .formulario .apellidos{
+    grid-area: apellidos;
+
+}
+.pantalla .formulario .telefono{
+    grid-area: telefono;
+
+}
+.pantalla .formulario .radio-btn{
+    grid-area: radiobutton;
+}
+.pantalla .formulario .descripcion{
+    grid-area: descripcion;
+}
+.pantalla .formulario .tag-Git{
+    grid-area: tag;
+}
+.pantalla .formulario .boton{
+    grid-area: boton;
+}
+.formulario .apellidos , .formulario .nombre , .formulario .tag-Git, .formulario .radio-btn, .formulario .telefono, .formulario .descripcion{
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+}
+.label{
+    width:25vw;}
+.radio-btn .label{
+    width: auto;
+}
+.formulario.radio-btn{
+    justify-content: space-between;
+}
+.mensaje{
+    font-size: 24px;
+    color:#3b5998;
+    font-style: italic;
+}
+
+
+
+
+
+
 
 @media (min-width:768px) {
     .nav .menu{
@@ -73,6 +138,11 @@ align-items: center;
     .nav .expand .link:hover{
         color: beige;
         opacity: 30%;
+    }
+    .link{
+        color: white;
+        text-decoration: none;
+    
     }
     
 }

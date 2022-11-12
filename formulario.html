@@ -16,25 +16,80 @@
         <h1 class="Encabezado"> Mi Portfolio </h1>
         </div>      
         <div class="expand">
-            <a class="link" href="#">Habilidades</a>
-            <a class="link" href="#">Experiencia</a>
-            <a class="link" href="#">Formulario de Contacto</a>
-            <a class="menu" href="#"><img class="logo" src="img/menu.png" alt="menú"></a>
+            <a class="link" href="#" target="_blank">Habilidades</a>
+            <a class="link" href="#" target="_blank">Experiencia</a>
+            <a class="link" href="#" target="_blank" >Formulario de Contacto</a>
+            <a class="menu" href="menu.html"><img class="logo" src="img/menu.png" alt="menú"></a>
         </div>
     </nav>
 
     <div class="pantalla">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab ipsum eaque aliquam placeat, laborum repudiandae alias, minus sint pariatur tempore sit aperiam error natus provident assumenda adipisci, accusantium ex? Aliquam!</p>
+        <form class="formulario" action="envioform.html">
+            <div class="nombre">
+                <label class="label" for="nombre">Nombre:</label>
+                <input class="input" required type="text" id="nombre" name="name" placeholder="Nombre">
+            </div>
+            <div class="apellidos">
+                <label class="label" for="apellidos">Apellidos:</label>
+                <input required class="input" type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
+            </div>
+            <div class="telefono">
+                <label class="label" for="tel">Teléfono:</label>
+                <input class="input" required type="tel" id="tel" name="telefono" placeholder="Teléfono">
+            </div>
+            <fieldset class="radio-btn">
+                <legend>¿Cómo me has conocido?</legend>
+                <div>
+                    <label class="label" for="uni">Universidad</label>
+                    <input type="radio" id="uni" name="conoce" value="Universidad">
+
+                </div>
+
+                <div>
+                    <label class="label" for="KC">Keepcoding kick-off</label>
+                    <input type="radio" id="KC" name="conoce" value="Keepcoding kick-off">
 
 
+                </div>
+                
+                <div>
+                    <label class="label" for="Colegio">Colegio</label>
+                    <input type="radio" id="Colegio" name="conoce" value="Colegio">
+
+                </div>
+                
+                <div>
+                    <label class="label" for="git">Git-Hub</label>
+                    <input type="radio" id="git" name="conoce" value="Git-Hub"> 
+
+                </div>
+                
+                
+                
+            
+
+            </fieldset>
+            <div class="tag-Git">
+                <label class="label" for="tag">Tag Git-Hub</label>
+                <input class="input" type="text" id="tag" name="tag" placeholder="@TagGit-hub">
+            </div >
+            <div class="descripcion">
+                <label class="label" for="descripcion">Motivo de Contacto</label>
+                <textarea name="descripción" id="descripcion" cols="30" rows="10" placeholder="Indica Motivo por el que me contactas"></textarea>
+            
+            </div>
+            
+            <input class="boton" type="submit" value="Enviar Formulario">
+        </form>
+        
 
 
 
     </div>
     <footer class="footer">
-        <a class="link" href="https://www.facebook.com/gabita.cv.7/"><img class="logo" src="img/fb.png" alt="facebook"></a>
-        <a class="link" href="https://www.linkedin.com/in/gabriela-carrazana-4160581b7"><img class="logo" src="img/linkedin.png" sizes="15%" alt="linkedin"></a>
-        <a class="link" href="https://www.instagram.com/gabita_cv/"> <img class="logo" src="img/instagram.png" alt="instagram"></a>
+        <a class="link" href="https://www.facebook.com/gabita.cv.7/" target="_blank"><img class="logo" src="img/fb.png" alt="facebook"></a>
+        <a class="link" href="https://www.linkedin.com/in/gabriela-carrazana-4160581b7" target="_blank"><img class="logo" src="img/linkedin.png" sizes="15%" alt="linkedin"></a>
+        <a class="link" href="https://www.instagram.com/gabita_cv/" target="_blank"> <img class="logo" src="img/instagram.png" alt="instagram"></a>
         
     </footer>
     
