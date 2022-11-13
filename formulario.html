@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Portfolio</title>
+    <title>Formulario</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
 
@@ -27,8 +27,9 @@
         </div>
     </nav>
 
-    <div class="pantalla">
-        <form  class="formulario" action="envioform.html">
+    <div class="pantalla"> 
+        <!--Puse el get para q el link funcione correctamente pero en realidad el correcto es post pq es info sensible-->
+        <form  class="formulario"  method="get" action="envioform.html">
             <div class="nombre">
                 <label class="label" for="nombre">Nombre:</label>
                 <input class="input" required type="text" id="nombre" name="name" placeholder="Nombre" pattern=^[A-ZÑa-zñáéíóúÁÉÍÓÚ'° ]+$>
@@ -79,7 +80,7 @@
             </div >
             <div class="descripcion">
                 <label class="label" for="descripcion">Motivo de Contacto</label>
-                <textarea maxlength="180" name="descripción" id="descripcion" cols="30" rows="10" placeholder="Indica Motivo por el que me contactas"></textarea>
+                <textarea required maxlength="180" name="descripción" id="descripcion" cols="30" rows="10" placeholder="Indica Motivo por el que me contactas"></textarea>
             
             </div>
             

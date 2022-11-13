@@ -134,7 +134,8 @@ align-items: center;
         display:flex;
     }
     .nav .expand .link:hover{
-        color: beige;
+        transition: color 0.3s linear;
+        color: rgb(131, 129, 130);
         opacity: 30%;
     }
     .link{
