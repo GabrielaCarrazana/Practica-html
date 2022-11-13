@@ -1,7 +1,7 @@
 .body{
     display: grid;
     grid-template-columns: 25vw 50vw 25vw;
-    grid-template-rows: 10vh 45vh 15vh 20vh 10vh;
+    grid-template-rows: 10vh 40vh 10vh 30vh 10vh;
     grid-template-areas: 
     "nav nav nav"
     "foto foto foto"
@@ -31,6 +31,11 @@
 }
 .presentacion{
     grid-area: presentacion;
+    color: #3b5998;
+    padding-left: 0.5vw;
+    padding-right: 0.5vw;
+    text-align: justify;
+    
 }
 .presentacion , .foto-perfil ,.info{
     background-color: rgb(224, 222, 222);
@@ -74,6 +79,7 @@
    height: 5vh;
 }
 
+
 .nav .icono{
     width: 10vh;
     height: 8vh;
@@ -97,5 +103,10 @@
         color: white;
         text-decoration: none;
     
+    }
+    .presentacion{
+        font-size: 20px;
+        font-family: 'Times New Roman', Times, serif;
+
     }
 }

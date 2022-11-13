@@ -1,7 +1,7 @@
 .body{
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 15vh 10vh 55vh 10vh ;
+    grid-template-rows: 15vh 10vh 45vh 20vh ;
     border-color: white;
     grid-template-areas: 
     "titulo"
@@ -37,7 +37,7 @@
 .texto{
     text-align: center;
     font-style: initial;
-    font-size: 8vh;
+    font-size: 5vh;
     margin: 1vh;
     text-decoration: none;
     color: white;
