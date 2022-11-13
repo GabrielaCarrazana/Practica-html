@@ -104,7 +104,7 @@ align-items: center;
 
 
 .barra[value]::-webkit-progress-bar {
-    animation: barras-Estado 4s infinite;
+    animation: barras-Estado 2s infinite;
     
   background-color: white;
 }
