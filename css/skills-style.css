@@ -98,8 +98,17 @@ align-items: center;
     width: 75%;
     height:10%;
     background-color: #fafcff;
+    animation: barras-Estado 10s infinite;
 
 }
+
+.barra[value]::-webkit-progress-bar {
+  background-color: white;}
+
+  
+  progress[value]::-webkit-progress-value {
+    background-color: #3b5998;;
+  }
 .habilidad1 , .habilidad2 , .habilidad3, .habilidad4, .habilidad5, .habilidad6, .habilidad7, .habilidad8{
         margin-top: 5%;
         margin-left: 5%;
@@ -133,5 +142,15 @@ align-items: center;
         text-decoration: none;
     
     }
+    
+}
+@keyframes barras-Estado {
+    from{background-color:gray;
+        color: #3b5998;
+    opacity: 0%;}
+
+    To{background-color: white;
+        background-position: 55%;
+        opacity: 75%;}    
     
 }

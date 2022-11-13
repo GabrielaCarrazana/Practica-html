@@ -1,0 +1,101 @@
+.body{
+    display: grid;
+    grid-template-columns: 25vw 50vw 25vw;
+    grid-template-rows: 10vh 45vh 15vh 20vh 10vh;
+    grid-template-areas: 
+    "nav nav nav"
+    "foto foto foto"
+    "info info info"
+    "presentacion  presentacion presentacion "
+    "footer footer footer";
+}
+.foto-perfil{
+    grid-area: foto;
+    
+}
+.foto-perfil .foto{
+    justify-content: center;
+     width: 100%;
+     height:100%;
+     
+}
+.info{
+    grid-area: info;
+    color: #6d8ac7;
+    font-style: italic;
+    font-size: 20px;
+}
+.info .Nombre{
+    font-size: px;
+    color: #3b5998;
+}
+.presentacion{
+    grid-area: presentacion;
+}
+.presentacion , .foto-perfil ,.info{
+    background-color: rgb(224, 222, 222);
+}
+.footer{     
+    grid-area: footer;
+    }
+
+.Aplicacion{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    font-size:5vh;
+}
+
+.nav{
+    font-size: 5vh;
+    color:white;
+    font-style :inherit;
+    grid-area: nav;
+    background-color: #3b5998 ;
+    }
+
+.nav  .link{
+    font-size: 3vh;
+    font-style:inherit;
+    color: white;
+    text-decoration: none;
+    display: none;
+}
+.footer, .nav, .expand{
+    display: flex;
+    justify-content: space-between; 
+    padding-left: 0.5vh;
+    padding-right: 0.5vh;
+    align-items:center; 
+    background-color: #3b5998 ; 
+}
+
+.footer .logo, .footer .link,.nav .logo{    
+   height: 5vh;
+}
+
+.nav .icono{
+    width: 10vh;
+    height: 8vh;
+}
+
+@media (min-width:768px) {
+    .nav .menu{
+        display:none;
+    }
+    .nav .expand .link{
+        padding-left: 1vw;
+        padding-right: 1vw;
+        display:flex;
+    }
+    .nav .expand .link:hover{
+        transition: color 10s linear;
+        color: rgb(131, 129, 130);
+        opacity: 30%;
+    }
+    .link{
+        color: white;
+        text-decoration: none;
+    
+    }
+}

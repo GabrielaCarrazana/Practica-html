@@ -1,13 +1,13 @@
 .body{
     display: grid;
     grid-template-columns: 100vw;
-    grid-template-rows: 15vh 10vh 10vh 10vh 55vh;
+    grid-template-rows: 15vh 10vh 55vh 10vh ;
     border-color: white;
     grid-template-areas: 
     "titulo"
-    "experiencia"
     "formulario"
     "skills"
+    "none"
     "logo";
 
     background-color: #3b5998 ;
@@ -15,10 +15,6 @@
     font-size: 5vh;
     font-style: inherit;
     text-decoration: none;
-}
-.experiencia{
-    grid-area: experiencia;
-
 }
 .formulario{
     grid-area: formulario;
@@ -33,7 +29,7 @@
     border-width: 5px;
     border-color: white;
     border-radius: 2px;
-    margin-bottom: 2vh;
+    margin-bottom: 4vh;
     padding: 1vh;
 
     
@@ -41,7 +37,7 @@
 .texto{
     text-align: center;
     font-style: initial;
-    font-size: 7vh;
+    font-size: 8vh;
     margin: 1vh;
     text-decoration: none;
     color: white;
@@ -51,7 +47,7 @@
     grid-area: logo;
     display:flex;
     justify-content: center;
-    align-items: center;
+    align-items: end;
 }
 .link{
     color: white;
